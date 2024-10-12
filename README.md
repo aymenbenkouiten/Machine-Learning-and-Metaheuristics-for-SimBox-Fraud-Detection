@@ -58,8 +58,7 @@ In today’s digital age, telecommunications play a vital role in our daily live
 Here are the final results obtained for each model after applying various resampling techniques:
 
 ```plaintext
-
-
+|-------------------------|----------------|----------|----------------|---------|--------|
 | Model                   | Sampling       | Train F1 | Validation F1  | Test F1 | Recall |
 |-------------------------|----------------|----------|----------------|---------|--------|
 | **Logistic Regression** | Without        | 0.08     | 0.08           | 0.07    | 0.45   |
@@ -74,4 +73,4 @@ Here are the final results obtained for each model after applying various resamp
 | **XGBoost**             | Without        | 0.98     | 0.98           | 0.98    | 0.95   | **Best model** |
 |                         | With SMOTE     | 0.93     | 0.93           | 0.91    | 0.84   |
 |                         | Under-sampling | 0.93     | 0.93           | 0.91    | 0.84   |
-|-----------------------------------------------------------------------------------------|
+|-------------------------|----------------|----------|----------------|---------|--------|
