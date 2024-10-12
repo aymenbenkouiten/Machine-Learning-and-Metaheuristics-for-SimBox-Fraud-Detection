@@ -50,3 +50,24 @@ In today’s digital age, telecommunications play a vital role in our daily live
 ├── features-engineering.ipynb        # Feature selection and transformation notebook
 ├── exploratory-data-analysis.ipynb   # Data exploration and visualization notebook
 └── deployment.ipynb                  # System deployment notebook
+
+
+## Model Performance
+
+Here are the final results obtained for each model after applying various resampling techniques:
+
+| Model              | Sampling      | Train F1 | Validation F1 | Test F1 | Recall |
+|--------------------|---------------|----------|----------------|---------|--------|
+| **Logistic Regression** | Without       | 0.08     | 0.08           | 0.07    | 0.45   |
+|                    | With SMOTE    | 0.56     | 0.07           | 0.07    | 0.45   |
+|                    | Under-sampling | 0.50     | 0.07           | 0.07    | 0.42   |
+| **Decision Tree**  | Without       | 0.97     | 0.97           | 0.95    | 0.89   |
+|                    | With SMOTE    | 0.92     | 0.92           | 0.90    | 0.83   |
+|                    | Under-sampling | 0.92     | 0.92           | 0.90    | 0.83   |
+| **Random Forest**  | Without       | 0.98     | 0.97           | 0.96    | 0.92   |
+|                    | With SMOTE    | 0.92     | 0.92           | 0.91    | 0.83   |
+|                    | Under-sampling | 0.93     | 0.93           | 0.92    | 0.84   |
+| **XGBoost**       | Without       | 0.98     | 0.98           | 0.98    | 0.95   | **Best model** |
+|                    | With SMOTE    | 0.93     | 0.93           | 0.91    | 0.84   |
+|                    | Under-sampling | 0.93     | 0.93           | 0.91    | 0.84   |
+
